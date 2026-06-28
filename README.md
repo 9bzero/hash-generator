@@ -1,36 +1,18 @@
-# Hash Generator
+# hash-generator
 
-Generate cryptographic hashes from any text — MD5, SHA-1, SHA-256, SHA-512 — instantly in the browser.
+Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from text or a file. Everything runs in the browser using the Web Crypto API.
 
-## Supported Algorithms
+## Algorithms
 
-| Algorithm | Output Length | Use Case |
+| Algorithm | Output length | Notes |
 |---|---|---|
-| MD5 | 128-bit / 32 hex | Checksums |
-| SHA-1 | 160-bit / 40 hex | Legacy verification |
-| SHA-256 | 256-bit / 64 hex | Modern security |
-| SHA-512 | 512-bit / 128 hex | High-security hashing |
+| MD5 | 128 bits (32 hex chars) | Fast but broken for security use |
+| SHA-1 | 160 bits | Deprecated for security |
+| SHA-256 | 256 bits | The standard choice |
+| SHA-512 | 512 bits | Slower, larger output |
 
-## Features
-
-- Generates all 4 hashes simultaneously as you type
-- Copy individual hash to clipboard
-- File hash mode — drag and drop a file to hash it
-- Uppercase / lowercase toggle
-- Runs entirely in the browser via Web Crypto API — no data leaves your device
-
-## Stack
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=black)
-![Web Crypto API](https://img.shields.io/badge/Web_Crypto_API-orange?style=flat)
-![Vite](https://img.shields.io/badge/Vite-646cff?style=flat&logo=vite&logoColor=white)
-
-## Run locally
+## Run
 
 ```bash
 npm install && npm run dev
 ```
-
----
-Made by [9bzero](https://github.com/9bzero)
